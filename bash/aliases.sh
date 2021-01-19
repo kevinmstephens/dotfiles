@@ -45,3 +45,20 @@ if $(gls &>/dev/null)
 then
   alias ls="gls -F --color"
 fi
+
+# ----------------------------------------------------------------------
+# git
+# ----------------------------------------------------------------------
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit -m '
+alias gd='git diff'
+alias go='git checkout '
+alias gh='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+alias gbdall='git checkout master && git branch | grep -v "master" | grep -v "development" | xargs git branch -D'
+
+# ----------------------------------------------------------------------
+# google cloud / kubernetes
+# ----------------------------------------------------------------------
+alias k='kubectl '
